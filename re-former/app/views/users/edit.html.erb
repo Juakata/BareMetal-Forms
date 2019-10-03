@@ -1,14 +1,9 @@
 <h1>Edit User</h1>
 
-<%= form_for( @user, url: "/users/edit")  do |f| %>
+<%= form_for( @user, local: true)  do |f| %>
     User id: <%= f.text_field :id %><br /><br />
-    <%= f.submit %>
-  <% end %>
-
-<%= form_for( @user, url: "/users/edit/userid")  do |f| %>
     name: <%= f.text_field :username %><br /><br />
     email: <%= f.email_field :email %><br /><br />
     password: <%= f.password_field :password %><br /><br />
     <%= f.submit %>
   <% end %>
-  
