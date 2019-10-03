@@ -1,6 +1,6 @@
 <h1>Edit User</h1>
 
-<%= form_for( @user, local: true)  do |f| %>
+<%= form_for( @user )  do |f| %>
     User id: <%= f.text_field :id %><br /><br />
     name: <%= f.text_field :username %><br /><br />
     email: <%= f.email_field :email %><br /><br />
